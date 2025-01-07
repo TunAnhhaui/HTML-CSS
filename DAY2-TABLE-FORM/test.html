@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <div>
+        <label for="num1">User Name</label>
+        <!--Thuoc tinh trong input là attribute-->
+        <input type="text" id="num1" name="num1" />
+      </div>
+
+      <div>
+        <label for="num2">User Name</label>
+        <!--Thuoc tinh trong input là attribute-->
+        <input type="text" id="num2" name="num2" />
+      </div>
+      <div>
+        <label for="kq">Ket qua</label>
+        <input type="text" id="kq" />
+      </div>
+      <button type="submit">Gui</button>
+    </form>
+  </body>
+
+  <script>
+    const num1 = document.querySelector("#num1");
+    console.log(num1);
+    const num2 = document.querySelector("#num2");
+    const c = num1 + num2;
+  </script>
+</html>

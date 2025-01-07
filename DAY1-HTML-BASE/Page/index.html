@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 1: HTML: BASIC</title>
+  </head>
+  <body>
+    <!-- SEMANTIC HTML: Ngữ nghĩa: Nav, main, section, ....-->
+    <div class="wrap">
+      <header>Header</header>
+
+      <!-- Vì sao sử dụng thẻ section?
+        - section là 1 thẻ SEMANTIC có ngữ nghĩa
+        - Dùng để gom nhóm nội dung có liên quan tới nhau.
+        - Có title lq tới nội dung lq tới các phân khác
+        - Tạo ra các cấu trúc rõ ràng
+        - Thẻ section nên có h2-h6 để tạo tiêu đề cho từng phần của web có ý nghĩa gì
+        - Tăng khả năng truy cập của người dùng
+      -->
+
+      <main>
+        <section>
+          <h2>Close tag</h2>
+
+          <img
+            src="https://images.app.goo.gl/1NLLodWRT4dPsGKG8"
+            width="100%"
+            alt="This is image"
+          />
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore
+            maiores eos doloremque amet maxime reiciendis velit impedit, earum
+            harum, molestiae deserunt quo aperiam vero totam, quidem fugit
+            libero consequuntur officia.
+          </p>
+          <hr />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
+            tenetur assumenda aut sequi dolor molestias, atque, ex porro laborum
+            itaque dignissimos minus eveniet accusamus provident non ducimus
+            eos, odio rem.
+          </p>
+        </section>
+
+        <section>
+          <h2>HTML Attribute</h2>
+          <a href="https://google.com" target="_blank">google</a>
+          <input type="text" placeholder="Please enter name: " name="" id="" />
+        </section>
+
+        <section>
+          <!-- CTRL + /-->
+          <!--SHIFT + ALT + DOWN-->
+          <p>Heading Tag</p>
+          <h1>This is heading tag 1</h1>
+          <h2>This is heading tag 2</h2>
+          <h3>This is heading tag 3</h3>
+          <h4>This is heading tag 4</h4>
+          <h5>This is heading tag 5</h5>
+          <h6>This is heading tag 6</h6>
+        </section>
+
+        <section>
+          <h2>Span Tag</h2>
+          <p>
+            Đây là 1 đoạn văn bản
+            <span style="color: red">một phần được tô màu đỏ</span>
+          </p>
+          <p>
+            <span style="font-weight: 700">Họ tên: </span>Tuấn Anh
+            <br />
+            <span style="font-style: italic">Năm sinh: </span> 2004
+          </p>
+        </section>
+
+        <section>
+          <!--ALT + Mũi tên-->
+          <h2>Link & Button</h2>
+          <a href="https://google.com">Google</a>
+          <button type="button" onclick="alert('Hello')">Click me</button>
+          <a href="#">Tag</a>
+        </section>
+
+        <section>
+          <h2>Absolute & Relative Urls</h2>
+
+          <p>Relative Path - Đường dẫn tương đối</p>
+          <img src="../image/images.jpg" alt="test" />
+
+          <p>Absolute Path - Đường dẫn tuyệt đối</p>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgtLGzH-73_TDgxSWALIPhaclPUh9xodm0Hg&s"
+            alt="test"
+          />
+        </section>
+
+        <section>
+          <h2>Form</h2>
+          <form action="">
+            <label for="email">Email</label>
+            <input
+              name="email"
+              id="email"
+              type="email"
+              placeholder="anhhaui@gmail.com"
+            />
+
+            <label for="password">Password</label>
+            <input
+              name="password"
+              type="password"
+              id="password"
+              placeholder="password"
+            />
+
+            <button type="submit">Gửi</button>
+          </form>
+        </section>
+
+        <section>
+          <h2>Image & Media</h2>
+
+          <audio controls muted>
+            <source src="../audio/audio.mp3" />
+          </audio>
+
+          <video controls>
+            <source src="../video/video.mp4" />
+          </video>
+        </section>
+
+        <section>
+          <h2>UL & OL</h2>
+          <ul>
+            <li>Coffe</li>
+            <li>Coca</li>
+            <li>Water</li>
+          </ul>
+
+          <ol>
+            <li>Coffe</li>
+            <li>Coca</li>
+            <li>Water</li>
+          </ol>
+        </section>
+
+        <section>
+          <h2>Block & Inline</h2>
+          <!--
+          * BLOCK: div, p ,h1-6,...
+            - Thẻ block chiếm toàn bộ kich thước của phần tử cha chứa nó
+            - Bắt đầu ở dòng mới khi tạo thẻ block mới
+            - Có thể thiết lập đc chiều rộng và chiều cao
+            - margin, padding 4 hướng
+          * INLINE: span, a, img,...
+            - Chiếm vừa đủ với nội dung của nó
+            - nằm cùng trên 1 dòng mới nhiều thẻ inline
+            - Không thể thiết lập đc chiều rộng vào chiều cao
+            - Chỉ có thể thiết lập margin, padding trái phải không thực hiện chính xác với trên dưới
+          -->
+          <p>Block</p>
+          <div>
+            <p style="background-color: green; color: white">This is a tag</p>
+            <p
+              style="
+                background-color: red;
+                color: white;
+                width: 200px;
+                height: 200px;
+              "
+            >
+              This is a tag
+            </p>
+          </div>
+
+          <p>Inline</p>
+          <span style="background-color: blueviolet">This is a span</span>
+          <span style="background-color: gray; width: 200px; height: 200px"
+            >This is a span</span
+          >
+        </section>
+      </main>
+      <footer>Footer</footer>
+    </div>
+  </body>
+</html>

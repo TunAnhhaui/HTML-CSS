@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      th,
+      td {
+        border: 1px solid;
+        border-collapse: collapse;
+        padding: 10px;
+        text-align: center;
+      }
+
+      section {
+        margin-top: 10px;
+      }
+      div {
+        margin: 10px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrap">
+      <!--
+        Sửa nhanh: 
+        - bôi đen + ctrl + D
+      -->
+      <main>
+        <section>
+          <h2>Table</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>Address</th>
+                <th>Status</th>
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+                <td>Trần Tuấn Anh</td>
+                <td>20</td>
+                <td>Thái Bình</td>
+                <td>Active</td>
+              </tr>
+              <tr>
+                <td>Trần Tuấn Anh</td>
+                <td>20</td>
+                <td>Thái Bình</td>
+                <td>Active</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Colspan</h2>
+          <table>
+            <tr>
+              <th>Item/Desc</th>
+              <th>Qty.</th>
+              <th>@</th>
+              <th>Price</th>
+            </tr>
+
+            <tr>
+              <td>Paperclips(Box)</td>
+              <td>100</td>
+              <td>1.15</td>
+              <td>115.00</td>
+            </tr>
+
+            <tr>
+              <td>Paper(Case)</td>
+              <td>10</td>
+              <td>45.99</td>
+              <td>459.90</td>
+            </tr>
+            <tr>
+              <td>Wastepaper Baskets</td>
+              <td>2</td>
+              <td>17.99</td>
+              <td>35.98</td>
+            </tr>
+
+            <tr>
+              <td colspan="3">Subtotal</td>
+              <td>610.88</td>
+            </tr>
+
+            <tr>
+              <td colspan="2">13</td>
+              <td>7%</td>
+              <td>42.76</td>
+            </tr>
+
+            <tr>
+              <td colspan="3">Total</td>
+              <td>653.64</td>
+            </tr>
+          </table>
+        </section>
+
+        <section>
+          <h2>Rowspan</h2>
+          <table>
+            <thead>
+              <tr>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>9</td>
+                <td>10</td>
+                <td>11</td>
+                <!-- <td>12</td> -->
+              </tr>
+              <tr>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+              </tr>
+              <tr>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+              </tr>
+            </tbody>
+          </table>
+
+          <table>
+            <thead>
+              <tr>
+                <th></th>
+                <th></th>
+                <th>Bob</th>
+                <th>Alice</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td rowspan="2">Favorite</td>
+                <td>Color</td>
+                <td rowspan="3">Blue</td>
+                <td>Purple</td>
+              </tr>
+              <tr>
+                <td rowspan="2">Flavor</td>
+                <td>Banana</td>
+              </tr>
+              <tr>
+                <td rowspan="2">Least Favorite</td>
+                <td>Yellow</td>
+              </tr>
+              <tr>
+                <td>Flavor</td>
+                <td>Mint</td>
+                <td>Walnut</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>Final</h2>
+          <table>
+            <thead>
+              <tr>
+                <th rowspan="2">Stt</th>
+                <th rowspan="2">Tên sản phẩm</th>
+                <th colspan="2">Thông tin</th>
+                <th rowspan="2">Hãng</th>
+                <th rowspan="2">Giá</th>
+                <th rowspan="2">Trạng thái</th>
+              </tr>
+              <tr>
+                <th>Máu sắc</th>
+                <th>Cân nặng</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td>Dell 6450</td>
+                <td>Màu trắng</td>
+                <td>1kg</td>
+                <td>Dell</td>
+                <td>5.000.000</td>
+                <td>Hết hàng</td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td>HP 450g3</td>
+                <td>Màu đỏ</td>
+                <td>1kg</td>
+                <td>HP</td>
+                <td>5.000.000</td>
+                <td>Còn hàng</td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td>Lenovo</td>
+                <td>Màu đen</td>
+                <td>1kg</td>
+                <td>Lenovo</td>
+                <td>5.000.000</td>
+                <td>Hết hàng</td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+
+        <section>
+          <h2>FORM</h2>
+          <form>
+            <div>
+              <label for="userName">User Name</label>
+              <!--Thuoc tinh trong input là attribute-->
+              <input
+                type="text"
+                id="userName"
+                placeholder="name"
+                value="Trần Tuấn Anh"
+                name="userName"
+              />
+            </div>
+
+            <div>
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+
+            <div>
+              <label for="password">Mật khẩu</label>
+              <input type="password" id="password" name="password" />
+            </div>
+
+            <div>
+              <label for="checkbox">Checkbox</label>
+              <input type="checkbox" name="question" id="question01" /> Đáp án
+              A<br />
+              <label for="checkbox">Checkbox</label>
+              <input type="checkbox" name="question" id="question01" /> Đáp án B
+            </div>
+
+            <div>
+              <label for="">Chọn giới tính</label>
+              <input type="radio" name="gender" checked />Nam
+              <input type="radio" name="gender" />Nữ
+            </div>
+
+            <div>
+              <label for="date">Date:</label>
+              <input type="date" name="date" />
+            </div>
+
+            <div>
+              <label for="date">File:</label>
+              <input type="file" name="file" />
+            </div>
+
+            <div>
+              <label for="range">Lọc:</label>
+              <input type="range" name="range" />
+            </div>
+
+            <div>
+              <label for="number">Phone</label>
+              <input type="number" id="number" name="number" min="1" max="10" />
+            </div>
+
+            <div>
+              <label for="comment">Area</label>
+              <textarea name="comment" id="comment"></textarea>
+            </div>
+
+            <div>
+              <select>
+                <option value="">Chọn thành phố</option>
+                <option value="1">Hà Nội</option>
+                <option value="2">Thái Bình</option>
+                <option value="3">Hưng Yên</option>
+                <option value="4">Hải Dương</option>
+              </select>
+            </div>
+
+            <button type="submit">Gửi</button>
+          </form>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
