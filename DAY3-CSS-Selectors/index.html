@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS-SELECTORS</title>
+    <!--Nhận css bằng rel ="stylesheet"-->
+    <link rel="stylesheet" href="/DAY3-CSS-Selectors/style.css" />
+  </head>
+  <!--CSS Internal-->
+  <!-- <style>
+    h2 {
+      color: blue;
+    }
+  </style> -->
+  <body>
+    <main>
+      <section>
+        <h2 id="title" class="title" style="color: red">CSS Selectors</h2>
+        <p class="text">This is a tag</p>
+        <p class="text">This is a tag</p>
+        <p>This is a tag no style</p>
+        <span>This is a span</span>
+        <em>This is an em tag</em>
+
+        <!-- CSS Inline
+        style: attribute
+        color: css selectors
+        -->
+        <!-- <p style="color: red">This is p tag</p> -->
+      </section>
+
+      <section>
+        <h2>Selectors</h2>
+
+        <div class="parent">
+          <p class="description">This is children</p>
+          <span>This is a span in parent</span>
+        </div>
+
+        <div>
+          <p class="description">This is children</p>
+          <p class="description">This is children</p>
+          <p class="description">This is children</p>
+        </div>
+
+        <br />
+        <br />
+        <div class="parent2">
+          <p class="description">This is a p tag</p>
+          <div>
+            <p class="description">This is p tag insite</p>
+            <p class="description">This is p tag insite</p>
+            <p class="description">This is p tag insite</p>
+            <p class="description">This is p tag insite</p>
+          </div>
+        </div>
+
+        <br />
+        <div class="parent3">
+          <p>This is p tag insite 1</p>
+          <p>This is p tag insite 2</p>
+          <p>This is p tag insite 3</p>
+          <p>This is p tag insite 4</p>
+          <p>This is p tag insite 5</p>
+          <p>This is p tag insite 6</p>
+          <p>This is p tag insite 7</p>
+          <div>This is div</div>
+          <p>This is p tag insite 8</p>
+        </div>
+
+        <br />
+        <p class="text1">This is p tag</p>
+        <span class="label">This is span tag</span>
+
+        <br /><br />
+        <div class="parent4" id="parent4">
+          <p class="text2">
+            <span class="value">This is child span tag</span>
+          </p>
+        </div>
+        <br /><br />
+
+        <!-- BEM-->
+        <!-- Block - Element - Modifier-->
+        <div class="parent5">
+          <p class="text5 text5-blue">This is p tag</p>
+          <p class="text5 text-red">This is p tag</p>
+        </div>
+        <br /><br />
+      </section>
+
+      <section>
+        <h2>Pseudo-class selector</h2>
+        <div class="box">
+          <p class="box__text box__text--red">This is text box</p>
+        </div>
+        <button>Click Me!!!</button>
+        <br /><br />
+        <ul class="fruit-list">
+          <li class="fruit-item">Apple</li>
+          <li class="fruit-item">Orange</li>
+          <li class="fruit-item">WaterMelon</li>
+          <li class="fruit-item">Banana</li>
+        </ul>
+        <div>
+          <input type="text" data-id="name" />
+        </div>
+      </section>
+
+      <a class="para" href="hhtps://google.com">Link 1</a>
+      <a class="para" href="hhtps://youtube.com">Link 2</a>
+      <a class="para" href="hhtps://google.com">Link 3</a>
+
+      <br /><br />
+      <section></section>
+    </main>
+  </body>
+</html>

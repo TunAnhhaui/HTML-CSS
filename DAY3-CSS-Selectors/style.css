@@ -1,0 +1,169 @@
+/* External CSS*/
+
+/* CSS Reset: Xoá bỏ khoảng trống có sẵn của trình duyệt*/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* CSS Selectors: */
+
+/* ID: Nên là duy nhất */
+#title {
+  color: blueviolet !important;
+}
+.title {
+  color: blue;
+}
+
+/* Class: Gom nhóm các thẻ có chung style */
+.text {
+  color: red;
+}
+
+.text {
+  color: blue;
+}
+
+/* Tag name */
+/* span {
+  text-decoration: underline;
+} */
+
+/* Độ ưu tiên */
+/*
+  - Thứ tự css ảnh hưởng tới style. Khi viết 2 class thì độ ưu tiên bằng nhau nhưng style viết ở dưới sẽ được ưu tiên hơn để sử dụng sử dụng.
+
+  - Khi khác loại thì độ ưu tiên: Inline > ID > Class > Tag name
+
+  - Khi sử dụng !important thì mọi luật ưu tiên và sử dụng style có dòng !important (Không nên sử dụng lệnh này)
+  */
+
+/* Selectors*/
+
+/*Độ ưu tiên lớn hơn do có 2 class*/
+.parent .description {
+  color: red;
+}
+
+/* Chỉ có 1 class */
+.description {
+  color: brown;
+  line-height: 1.2;
+  font-size: 24px;
+}
+
+.parent span {
+  color: aqua;
+}
+
+/* Truy cập bằng " > ". Chỉ sử dụng cho những thẻ là con trực tiếp*/
+.parent2 > .description {
+  color: yellow;
+}
+
+/* Dấu " ~ " chọn tất cả phần tử nào nằm sau phần tử khác. VD: lấy tất cả thẻ p nằm sau 1 thẻ p*/
+.parent3 p ~ p {
+  /* color: blue; */
+}
+
+/*Dấu " + ": Chọn các element nằm sau LIỀN KỀ. VD: p(2) liền kề p(1) thì sẽ được áp dụng*/
+.parent3 p + p {
+  margin: 10px;
+}
+
+/* 2 element chung thuộc tính: */
+.text1,
+.label {
+  color: red;
+}
+
+/* Cấu trúc đi vào lớp */
+#parent4 {
+  color: yellow;
+}
+
+.parent4 .text2 .value {
+  color: blue;
+}
+
+.parent4 .text2 span {
+  color: red;
+}
+
+/* Pseudo*/
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+}
+
+.box:hover {
+  cursor: pointer;
+  background-color: blue;
+}
+
+button {
+  /* cursor: pointer chuyển thành bàn tay*/
+  cursor: pointer;
+}
+
+.fruit-list .fruit-item {
+  /* color: brown; */
+}
+
+/*Chon thành phần cuối*/
+.fruit-list .fruit-item:last-child {
+  /* color: red; */
+}
+
+/*Chon thành phần chỉ định*/
+
+.fruit-list .fruit-item:nth-child(2) {
+  /* color: red; */
+}
+
+/*Chon thành phần từ số n trở đi: n bắt đầu từ 0*/
+.fruit-list .fruit-item:nth-child(n + 3) {
+  color: red;
+}
+
+.parent5 .text5 {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700px;
+}
+/* Modifier lớp trong lớp*/
+.text5.text5-blue {
+  color: blue;
+}
+.text5.text-red {
+  color: red;
+}
+
+.box__text {
+  font-size: 30px;
+  line-height: 1.2;
+  font-weight: 700px;
+}
+.box__text.box__text--red {
+  color: yellow;
+}
+
+/* Chỉ tới thẻ input*/
+input[type="text"] {
+  color: red;
+}
+
+input[data-id="name"] {
+  border-radius: 20px;
+}
+
+a[href = "hhtps://google.com"]
+{
+  /* color: red; */
+}
+
+a[class*="p"] {
+  color: brown;
+}
