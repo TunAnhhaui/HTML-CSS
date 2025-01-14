@@ -161,7 +161,7 @@ input[data-id="name"] {
 
 a[href = "hhtps://google.com"]
 {
-  /* color: red; */
+  color: red;
 }
 
 a[class*="p"] {

@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  /* box-sizing: border-box; */
+}
+
+body {
+  font-family: "Courier New", "Courier", "monospace";
+  color: blue;
+}
+/* Margin*/
+
+.parent {
+  /* display: flex; */
+}
+.parent .box {
+  width: 200px;
+  height: 200px;
+  background-color: blueviolet;
+  color: white;
+}
+
+.box1 {
+  /* margin-top: 30px;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px; */
+
+  /* margin: 30px; */
+
+  /* margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 20px;
+  margin-right: 20px; */
+
+  /* margin: 30px 20px; */
+
+  /* margin-top: 40px;
+  margin-right: 25px;
+  margin-bottom: 30px;
+  margin-left: 20px; */
+
+  /* margin: 40px 25px 30px 20px; */
+
+  /* margin-top: 40px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  margin-left: 20px; */
+
+  /* margin: 40px 20px 30px; */
+
+  /* margin-top: 40px;
+  margin-right: 25px;
+  margin-bottom: 40px;
+  margin-left: 20px; */
+  /* margin: 40px 25px 40px 20px; */
+}
+
+/*Padding*/
+
+.box2 {
+  /* padding: 20px; */
+  margin: 30px;
+}
+
+/* Margin collapse: Khi 2 block co margin huong ve nhau. khoang cach giua 2 block se bang margin trong bloc lon hon*/
+box1 {
+  margin-bottom: 30px;
+}
+
+/*Border*/
+.box1 {
+  border: 5px solid black;
+  padding: 30px;
+  box-sizing: border-box;
+}
+
+/*CSS Fonts*/
+/*
+    - font-size: Kích cỡ của chữ
+    - font-weight: Độ đậm nhạt của chữ
+    - font-family: font chữ
+    - font-style: italic(in nghiêng),....
+    - text-align: Vị trí của chữ trong box
+*/
+.paragraph {
+  color: red;
+  font-size: 30px;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.paragraph:last-child {
+  text-align: center;
+}
+
+.parent2 .box {
+  width: 300px;
+  height: 100px;
+  background-color: aquamarine;
+  color: white;
+
+  /*Position*/
+  /*
+    - relative: Ví trí tương đối
+        + left,right,top,bot: Nhíc ra về phía được set
+  */
+  position: relative;
+  left: 10px;
+}
+
+.parent2 .box span {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: #fff;
+  padding: 5px 10px;
+  background-color: black;
+  border-radius: 20px;
+}
+
+/* Flex container */
+.box {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  /* justify-content: space-between; */
+  /* justify-content: space-around; */
+  /* justify-content: space-evenly; */
+  /* align-items: stretch; */
+  align-items: center;
+}
+
+/*Flex item*/
+.box .item {
+  /* width: 100px;
+  height: 100px; */
+  background-color: violet;
+  color: #fff;
+  flex: 1;
+}
+
+.item-4 {
+  height: 500px;
+}
