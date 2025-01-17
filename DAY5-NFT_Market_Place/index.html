@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT Market Place</title>
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrap">
+      <header class="header">
+        <h1><img src="./images/Logo.png" alt="NFT Market Place" /></h1>
+
+        <div class="header-nav">
+          <nav class="navbar">
+            <ul class="menu">
+              <li class="menu-item">
+                <a class="menu-link" href="">Marketplace</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="">Rankings</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="">Connect a wallet</a>
+              </li>
+              <li class="menu-item">
+                <button class="btn btn-primary btn-small">
+                  <span class="btn-icon"
+                    ><img src="./images/User.png" alt="User Icon"
+                  /></span>
+                  <span class="btn-text">Sign Up</span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main>
+        <!-- Đây là phần ảnh to trong ô thứ 1-->
+        <section class="section-hero">
+          <div class="container">
+            <div class="hero-inner">
+              <div class="hero-content">
+                <div class="section-heading">
+                  <h2 class="section-title">
+                    Discover digital art & Collect NFTs
+                  </h2>
+                  <p class="section-subtitle">
+                    NFT marketplace UI created with Anima for Figma. Collect,
+                    buy and sell art from more than 20k NFT artists.
+                  </p>
+                  <button class="btn btn-primary">
+                    <span class="btn-icon"
+                      ><img
+                        src="./images/img_icon_rocket.png"
+                        alt="Rocket Icon"
+                    /></span>
+                    <span class="btn-text">Get Started</span>
+                  </button>
+                </div>
+                <ul class="statis-list">
+                  <li class="statis-item">
+                    <span class="statis-total">240K+</span>
+                    <span class="statis-text">Total Sale</span>
+                  </li>
+                  <li class="statis-item">
+                    <span class="statis-total">100K+</span>
+                    <span class="statis-text">Auctions</span>
+                  </li>
+                  <li class="statis-item">
+                    <span class="statis-total">240K+</span>
+                    <span class="statis-text">Artists</span>
+                  </li>
+                </ul>
+              </div>
+              <div class="hero-media">
+                <div class="hero-image">
+                  <img
+                    src="/DAY5-NFT_Market_Place/images/img_hero.png"
+                    alt="Hero Image"
+                  />
+                </div>
+
+                <div class="hero-media-info">
+                  <div class="nft-artist">
+                    <h3 class="nft-artist-title">Space Walking</h3>
+                    <div class="nft-artist-info">
+                      <div class="nft-artist-avatar">
+                        <img
+                          src="./images/img_hero_avatar.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <span class="nft-artist-name">Animakid</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Đây là phần trending trong ô thứ 2-->
+        <section class="section-trending">
+          <div class="container">
+            <div class="section-heading">
+              <h2 class="section-title">Trending collection</h2>
+              <p class="section-subtitle">
+                Checkout our weekly updated trending collection.
+              </p>
+            </div>
+            <div class="section-content">
+              <ul class="section-list-3">
+                <li class="trending-item-3">
+                  <div class="trending-hero-image">
+                    <img
+                      src="./images/img_trending_animal.png"
+                      alt="Hero Animal"
+                    />
+                  </div>
+                  <div class="trending-title">
+                    <div class="trending-image">
+                      <img
+                        src="./images/img_trending_keenum_cat.png"
+                        alt="Keenum Cat With Headphone"
+                      />
+                    </div>
+                    <div class="trending-image">
+                      <img
+                        src="./images/img_trending_keenum_bear.png"
+                        alt="Keenum Bear with Snapback"
+                      />
+                    </div>
+                    <button class="btn btn-small">
+                      <h5 class="btn-text">1025+</h5>
+                    </button>
+                  </div>
+                  <div class="hero-media-info">
+                    <div class="nft-artist">
+                      <h3 class="nft-artist-title">DSGN Animals</h3>
+                      <div class="nft-artist-info">
+                        <div class="nft-artist-avatar">
+                          <img
+                            src="./images/img_hero_avatar.png"
+                            alt="NFT Artist Avatar"
+                          />
+                        </div>
+                        <span class="nft-artist-name">MrFox</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="trending-item-3">
+                  <div class="trending-hero-image">
+                    <img
+                      src="./images/img_trending_hero_mushrooms.png"
+                      alt="Hero Mushrooms"
+                    />
+                  </div>
+                  <div class="trending-title">
+                    <div class="trending-image">
+                      <img
+                        src="./images/img_trending_mushrooms_1.png"
+                        alt="Mushrooms 1"
+                      />
+                    </div>
+                    <div class="trending-image">
+                      <img
+                        src="./images/img_trending_mushrooms_2.png"
+                        alt="Mushrooms 1"
+                      />
+                    </div>
+                    <button class="btn btn-small">
+                      <h5 class="btn-text">1025+</h5>
+                    </button>
+                  </div>
+                  <div class="hero-media-info">
+                    <div class="nft-artist">
+                      <h3 class="nft-artist-title">Magic Mushrooms</h3>
+                      <div class="nft-artist-info">
+                        <div class="nft-artist-avatar">
+                          <img
+                            src="./images/img_trending_artist_2.png"
+                            alt="NFT Artist Avatar"
+                          />
+                        </div>
+                        <span class="nft-artist-name">Shroomie</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="trending-item-3">
+                  <div class="trending-hero-image">
+                    <img
+                      src="./images/img_trending_hero_robot.png"
+                      alt="Hero Robot"
+                    />
+                  </div>
+                  <div class="trending-title">
+                    <div class="trending-image">
+                      <img
+                        src="./images/img_trending_robot_1.png"
+                        alt="Keenum Cat With Headphone"
+                      />
+                    </div>
+                    <div class="trending-image">
+                      <img
+                        src="./images/img_trending_robot_2.png"
+                        alt="Keenum Bear with Snapback"
+                      />
+                    </div>
+                    <button class="btn btn-small">
+                      <h5 class="btn-text">1025+</h5>
+                    </button>
+                  </div>
+                  <div class="hero-media-info">
+                    <div class="nft-artist">
+                      <h3 class="nft-artist-title">Disco Machines</h3>
+                      <div class="nft-artist-info">
+                        <div class="nft-artist-avatar">
+                          <img
+                            src="./images/img_trending_artist_3.png"
+                            alt="NFT Artist Avatar"
+                          />
+                        </div>
+                        <span class="nft-artist-name">BeKind2Robots</span>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Đây là phần Top Creators-->
+        <section class="section-creator">
+          <div class="container">
+            <div class="section-heading">
+              <div class="creator-content">
+                <h2 class="section-title">Top creators</h2>
+                <p class="section-subtitle">
+                  Checkout Top Rated Creators on the NFT Marketplace
+                </p>
+              </div>
+              <div class="creator-btn">
+                <button class="btn btn-outline">
+                  <img src="./images/img_creator_icon.png" alt="" />
+                  <p class="creator-btn-p">View Rankings</p>
+                </button>
+              </div>
+            </div>
+            <div class="section-content">
+              <ul class="creator-list">
+                <li class="creator-item">
+                  <div class="creator-box">
+                    <div class="creator-card">
+                      <span class="creator-rank">1</span>
+                      <div class="creator-avatar">
+                        <img
+                          src="./images/img_creator_01.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <div class="creator-info">
+                        <h3 class="creator-name">Keepitreal</h3>
+                        <div class="creator-sale">
+                          <p class="label">Total Sales:</p>
+                          <span class="coin">34.53 ETH</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="creator-item">
+                  <div class="creator-box">
+                    <div class="creator-card">
+                      <span class="creator-rank">2</span>
+                      <div class="creator-avatar">
+                        <img
+                          src="./images/img_creator_02.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <div class="creator-info">
+                        <h3 class="creator-name">DigiLab</h3>
+                        <div class="creator-sale">
+                          <p class="label">Total Sales:</p>
+                          <span class="coin">34.53 ETH</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="creator-item">
+                  <div class="creator-box">
+                    <div class="creator-card">
+                      <span class="creator-rank">3</span>
+                      <div class="creator-avatar">
+                        <img
+                          src="./images/img_creator_03.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <div class="creator-info">
+                        <h3 class="creator-name">GravityOne</h3>
+                        <div class="creator-sale">
+                          <p class="label">Total Sales:</p>
+                          <span class="coin">34.53 ETH</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="creator-item">
+                  <div class="creator-box">
+                    <div class="creator-card">
+                      <span class="creator-rank">4</span>
+                      <div class="creator-avatar">
+                        <img
+                          src="./images/img_creator_04.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <div class="creator-info">
+                        <h3 class="creator-name">Juanie</h3>
+                        <div class="creator-sale">
+                          <p class="label">Total Sales:</p>
+                          <span class="coin">34.53 ETH</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="creator-item">
+                  <div class="creator-box">
+                    <div class="creator-card">
+                      <span class="creator-rank">5</span>
+                      <div class="creator-avatar">
+                        <img
+                          src="./images/img_creator_05.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <div class="creator-info">
+                        <h3 class="creator-name">BlueWhale</h3>
+                        <div class="creator-sale">
+                          <p class="label">Total Sales:</p>
+                          <span class="coin">34.53 ETH</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="creator-item">
+                  <div class="creator-box">
+                    <div class="creator-card">
+                      <span class="creator-rank">6</span>
+                      <div class="creator-avatar">
+                        <img
+                          src="./images/img_creator_06.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <div class="creator-info">
+                        <h3 class="creator-name">Mr Fox</h3>
+                        <div class="creator-sale">
+                          <p class="label">Total Sales:</p>
+                          <span class="coin">34.53 ETH</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="creator-item">
+                  <div class="creator-box">
+                    <div class="creator-card">
+                      <span class="creator-rank">7</span>
+                      <div class="creator-avatar">
+                        <img
+                          src="./images/img_creator_07.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <div class="creator-info">
+                        <h3 class="creator-name">Shroomie</h3>
+                        <div class="creator-sale">
+                          <p class="label">Total Sales:</p>
+                          <span class="coin">34.53 ETH</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="creator-item">
+                  <div class="creator-box">
+                    <div class="creator-card">
+                      <span class="creator-rank">8</span>
+                      <div class="creator-avatar">
+                        <img
+                          src="./images/img_creator_08.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <div class="creator-info">
+                        <h3 class="creator-name">robotica</h3>
+                        <div class="creator-sale">
+                          <p class="label">Total Sales:</p>
+                          <span class="coin">34.53 ETH</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="creator-item">
+                  <div class="creator-box">
+                    <div class="creator-card">
+                      <span class="creator-rank">9</span>
+                      <div class="creator-avatar">
+                        <img
+                          src="./images/img_creator_09.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <div class="creator-info">
+                        <h3 class="creator-name">RustyRobot</h3>
+                        <div class="creator-sale">
+                          <p class="label">Total Sales:</p>
+                          <span class="coin">34.53 ETH</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="creator-item">
+                  <div class="creator-box">
+                    <div class="creator-card">
+                      <span class="creator-rank">10</span>
+                      <div class="creator-avatar">
+                        <img
+                          src="./images/img_creator_01.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <div class="creator-info">
+                        <h3 class="creator-name">Animakid</h3>
+                        <div class="creator-sale">
+                          <p class="label">Total Sales:</p>
+                          <span class="coin">34.53 ETH</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="creator-item">
+                  <div class="creator-box">
+                    <div class="creator-card">
+                      <span class="creator-rank">11</span>
+                      <div class="creator-avatar">
+                        <img
+                          src="./images/img_creator_11.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <div class="creator-info">
+                        <h3 class="creator-name">Dotgu</h3>
+                        <div class="creator-sale">
+                          <p class="label">Total Sales:</p>
+                          <span class="coin">34.53 ETH</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="creator-item">
+                  <div class="creator-box">
+                    <div class="creator-card">
+                      <span class="creator-rank">12</span>
+                      <div class="creator-avatar">
+                        <img
+                          src="./images/img_creator_12.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <div class="creator-info">
+                        <h3 class="creator-name">Ghiblier</h3>
+                        <div class="creator-sale">
+                          <p class="label">Total Sales:</p>
+                          <span class="coin">34.53 ETH</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Đây là categories section-->
+        <section class="section-category">
+          <div class="container">
+            <div class="section-heading">
+              <h2 class="section-title">Browse Categories</h2>
+            </div>
+            <div class="section-content">
+              <ul class="category-list">
+                <li class="category-item">
+                  <div class="category-box">
+                    <div class="category-card">
+                      <div class="category-image">
+                        <img
+                          src="./images/img_category_01.png"
+                          alt="NFT Categories"
+                        />
+                      </div>
+                      <div class="category-title">
+                        <h5 class="catergory-name">Art</h5>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="category-item">
+                  <div class="category-box">
+                    <div class="category-card">
+                      <div class="category-image">
+                        <img
+                          src="./images/img_category_02.png"
+                          alt="NFT Categories"
+                        />
+                      </div>
+                      <div class="category-title">
+                        <h5 class="catergory-name">Collectibles</h5>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="category-item">
+                  <div class="category-box">
+                    <div class="category-card">
+                      <div class="category-image">
+                        <img
+                          src="./images/img_category_03.png"
+                          alt="NFT Categories"
+                        />
+                      </div>
+                      <div class="category-title">
+                        <h5 class="catergory-name">Music</h5>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="category-item">
+                  <div class="category-box">
+                    <div class="category-card">
+                      <div class="category-image">
+                        <img
+                          src="./images/img_category_04.png"
+                          alt="NFT Categories"
+                        />
+                      </div>
+                      <div class="category-title">
+                        <h5 class="catergory-name">Photography</h5>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="category-item">
+                  <div class="category-box">
+                    <div class="category-card">
+                      <div class="category-image">
+                        <img
+                          src="./images/img_category_05.png"
+                          alt="NFT Categories"
+                        />
+                      </div>
+                      <div class="category-title">
+                        <h5 class="catergory-name">Video</h5>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="category-item">
+                  <div class="category-box">
+                    <div class="category-card">
+                      <div class="category-image">
+                        <img
+                          src="./images/img_category_06.png"
+                          alt="NFT Categories"
+                        />
+                      </div>
+                      <div class="category-title">
+                        <h5 class="catergory-name">Utility</h5>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="category-item">
+                  <div class="category-box">
+                    <div class="category-card">
+                      <div class="category-image">
+                        <img
+                          src="./images/img_category_07.png"
+                          alt="NFT Categories"
+                        />
+                      </div>
+                      <div class="category-title">
+                        <h5 class="catergory-name">Sport</h5>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="category-item">
+                  <div class="category-box">
+                    <div class="category-card">
+                      <div class="category-image">
+                        <img
+                          src="./images/img_category_08.png"
+                          alt="NFT Categories"
+                        />
+                      </div>
+                      <div class="category-title">
+                        <h5 class="catergory-name">Virtual Worlds</h5>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-discover">
+          <div class="container">
+            <div class="section-heading">
+              <div class="creator-content">
+                <h2 class="section-title">Discover More NFTs</h2>
+                <p class="section-subtitle">Explore new trending NFTs</p>
+              </div>
+              <div class="creator-btn">
+                <button class="btn btn-outline">
+                  <img src="./images/img_discover_icon.png" alt="Eye logo" />
+                  <p class="creator-btn-p">See All</p>
+                </button>
+              </div>
+            </div>
+            <div class="section-content">
+              <ul class="discover-list">
+                <li class="discover-item">
+                  <img
+                    src="./images/img_discover_galaxy.png"
+                    alt="Galaxy Image"
+                  />
+                  <div class="discover-info">
+                    <div class="nft-artist">
+                      <h3 class="nft-artist-title">Distant Galaxy</h3>
+                      <div class="nft-artist-info">
+                        <div class="nft-artist-avatar">
+                          <img
+                            src="./images/img_discover_artist_1.png"
+                            alt="NFT Artist Avatar"
+                          />
+                        </div>
+                        <span class="nft-artist-name">MoonDancer</span>
+                      </div>
+                    </div>
+                    <div class="discover-sale">
+                      <div class="price">
+                        <p class="destination">Price</p>
+                        <p class="value">1.63 ETH</p>
+                      </div>
+                      <div class="highest-bid">
+                        <p class="destination">Highest Bid</p>
+                        <p class="value">0.33 wETH</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="discover-item">
+                  <img
+                    src="./images/img_discover_magic.png"
+                    alt="Galaxy Image"
+                  />
+                  <div class="discover-info">
+                    <div class="nft-artist">
+                      <h3 class="nft-artist-title">Life On Edena</h3>
+                      <div class="nft-artist-info">
+                        <div class="nft-artist-avatar">
+                          <img
+                            src="./images/img_discover_artist_2.png"
+                            alt="NFT Artist Avatar"
+                          />
+                        </div>
+                        <span class="nft-artist-name">NebulaKid</span>
+                      </div>
+                    </div>
+                    <div class="discover-sale">
+                      <div class="price">
+                        <p class="destination">Price</p>
+                        <p class="value">1.63 ETH</p>
+                      </div>
+                      <div class="highest-bid">
+                        <p class="destination">Highest Bid</p>
+                        <p class="value">0.33 wETH</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="discover-item">
+                  <img
+                    src="./images/img_discover_astronaut.png"
+                    alt="Galaxy Image"
+                  />
+                  <div class="discover-info">
+                    <div class="nft-artist">
+                      <h3 class="nft-artist-title">AstroFiction</h3>
+                      <div class="nft-artist-info">
+                        <div class="nft-artist-avatar">
+                          <img
+                            src="./images/img_discover_artist_3.png"
+                            alt="NFT Artist Avatar"
+                          />
+                        </div>
+                        <span class="nft-artist-name">Spaceone</span>
+                      </div>
+                    </div>
+                    <div class="discover-sale">
+                      <div class="price">
+                        <p class="destination">Price</p>
+                        <p class="value">1.63 ETH</p>
+                      </div>
+                      <div class="highest-bid">
+                        <p class="destination">Highest Bid</p>
+                        <p class="value">0.33 wETH</p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- Đây là Hero Image-->
+        <section class="section-banner">
+          <div class="hero-banner">
+            <div class="banner-image">
+              <div class="banner-overlay"></div>
+              <div class="container">
+                <div class="banner-info">
+                  <div class="banner-artist">
+                    <div class="nft-artist-info">
+                      <div class="nft-artist-avatar">
+                        <img
+                          src="./images/img_trending_artist_2.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <span class="nft-artist-name">Shroomie</span>
+                    </div>
+                    <h2 class="banner-title">Magic Mashrooms</h2>
+                    <button class="btn btn-white">
+                      <img
+                        src="./images/img_discover_icon.png"
+                        alt="Eye logo"
+                      />
+                      <p class="creator-btn-p">See All</p>
+                    </button>
+                  </div>
+                  <div class="banner-timer">
+                    <p class="auction-name">Auction ends in:</p>
+                    <div class="auction-timer">
+                      <div class="timer-name">
+                        <h3 class="time">59</h3>
+                        <p class="auction-name">Hours</p>
+                      </div>
+                      <div class="timer-colon">
+                        <span class="colon">:</span>
+                      </div>
+                      <div class="timer-name">
+                        <h3 class="time">59</h3>
+                        <p class="auction-name">Minutes</p>
+                      </div>
+                      <div class="timer-colon">
+                        <span class="colon">:</span>
+                      </div>
+                      <div class="timer-name">
+                        <h3 class="time">59</h3>
+                        <p class="auction-name">Seconds</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section-works">
+          <div class="container">
+            <div class="section-heading">
+              <div class="creator-content">
+                <h2 class="section-title">How it works</h2>
+                <p class="section-subtitle">Find out how to get started</p>
+              </div>
+            </div>
+            <div class="section-content">
+              <ul class="work-list">
+                <li class="work-item">
+                  <div class="work-box">
+                    <div class="work-card">
+                      <img src="./images/img_work_1.png" alt="Work image" />
+                      <div class="work-content">
+                        <h3 class="work-title">Setup Your Wallet</h3>
+                        <p class="work-text">
+                          Set up your wallet of choice. Connect it to the
+                          Animarket by clicking the wallet icon in the top right
+                          corner.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="work-item">
+                  <div class="work-box">
+                    <div class="work-card">
+                      <img src="./images/img_work_2.png" alt="Work image" />
+                      <div class="work-content">
+                        <h3 class="work-title">Create Collection</h3>
+                        <p class="work-text">
+                          Upload your work and setup your collection. Add a
+                          description, social links and floor price.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+                <li class="work-item">
+                  <div class="work-box">
+                    <div class="work-card">
+                      <img src="./images/img_work_3.png" alt="Work image" />
+                      <div class="work-content">
+                        <h3 class="work-title">Start Earning</h3>
+                        <p class="work-text">
+                          Choose between auctions and fixed-price listings.
+                          Start earning by selling your NFTs or trading others.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section-subcrise">
+          <div class="container">
+            <div class="section-subcrise-content">
+              <div class="section-subcrise-box">
+                <img src="./images/img_hero_subrise.png" alt="Get email" />
+                <div class="subcrise-content">
+                  <div class="creator-content">
+                    <h2 class="section-title">Join our weekly digest</h2>
+                    <p class="section-subtitle">
+                      Get exclusive promotions & updates straight to your inbox.
+                    </p>
+                  </div>
+                  <div class="subcrise-input">
+                    <input
+                      class="input"
+                      placeholder="Enter your email here"
+                      type="text"
+                    />
+                    <button class="btn btn-primary">
+                      <img src="./images/img_email_icon.png" alt="Eye logo" />
+                      <p class="creator-btn-p">Subcrise</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <div class="container">
+          <ul class="footer-list">
+            <li class="footer-item">
+              <div class="footer-contact">
+                <div class="contact-box">
+                  <h2>
+                    <img src="./images/Logo.png" alt="NFT Market Place" />
+                  </h2>
+                  <div class="footer-content">
+                    <p class="footer-title">
+                      NFT marketplace UI created with Anima for Figma.
+                    </p>
+                    <div class="footer-social">
+                      <p class="footer-text">Join our community</p>
+                      <ul class="social-list">
+                        <li class="social-icon">
+                          <img
+                            src="./images/img_discord_icon.png"
+                            alt="Discord Icon"
+                          />
+                        </li>
+                        <li class="social-icon">
+                          <img
+                            src="./images/img_ytb_icon.png"
+                            alt="Youtube Icon"
+                          />
+                        </li>
+                        <li class="social-icon">
+                          <img
+                            src="./images/img_twitter_icon.png"
+                            alt="Twitter Icon"
+                          />
+                        </li>
+                        <li class="social-icon">
+                          <img
+                            src="./images/img_insta_icon.png"
+                            alt="Instagram Icon"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="footer-item">
+              <div class="footer-explore">
+                <h5 class="explore-title">Explore</h5>
+                <div class="explore-content">
+                  <a href="" class="menu-link">Marketplace</a>
+                  <a href="" class="menu-link">Rankings</a>
+                  <a href="" class="menu-link">Connect a wallet</a>
+                </div>
+              </div>
+            </li>
+            <li class="footer-item">
+              <div class="digest-explore">
+                <h5 class="explore-title">Join our weekly digest</h5>
+                <div class="digest-content">
+                  <p class="digest-text">
+                    Get exclusive promotions & updates straight to your inbox.
+                  </p>
+                  <div class="subcrise-input">
+                    <input
+                      class="input"
+                      placeholder="Enter your email here"
+                      type="text"
+                    />
+                    <button class="btn btn-primary">
+                      <p class="creator-btn-p">Subcrise</p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

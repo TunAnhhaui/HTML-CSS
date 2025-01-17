@@ -1,0 +1,759 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  /* Colors */
+  --primary-color: #a259ff;
+  --gray-color: #2b2b2b;
+  --white-color: #fff;
+  --light-gray-color: #3b3b3b;
+  --light-smoke-gray: #858584;
+  /* Fonts */
+  --primary-font: "Work Sans", serif;
+  --secondary-font: "Space Mono", serif;
+}
+
+body {
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: var(--primary-font);
+}
+.wrap {
+  width: 1280px;
+  max-width: 100%;
+  margin: 0 auto;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+
+button,
+.category-item,
+.trending-image,
+.discover-item,
+.social-icon {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+button,
+input {
+  font: inherit; /*Ep kế thừa bằng inherit*/
+}
+button:focus,
+input:focus {
+  outline: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+a {
+  display: inline-block;
+  color: var(--white-color);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+select,
+textarea,
+input {
+  color: var(--gray-color);
+}
+
+.container {
+  width: 100%;
+  max-width: 1110px; /* Do 1050 content + 60px padding trai phai*/
+  padding: 30px;
+  margin: 130px auto;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  background-color: #a259ff;
+  border: 2px solid transparent;
+  padding: 17px 48px;
+  line-height: 22px;
+}
+
+.btn.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn.btn-outline {
+  border-color: var(--primary-color);
+}
+.btn.btn-white {
+  background-color: var(--white-color);
+}
+.btn.btn-small {
+  padding: 17px 28px;
+}
+
+.section-content {
+  margin-top: 60px;
+}
+
+.section-heading .section-subtitle {
+  margin-top: 10px;
+}
+
+.section-title,
+.section-subtitle {
+  text-transform: capitalize; /* Định dạng mỗi từ dược viết hoa chữ cái đầu */
+}
+
+.section-title {
+  font-size: 38px;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.section-subtitle {
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+.section-list-3 {
+  display: flex;
+  flex: 1;
+  gap: 30px;
+}
+
+/*Header*/
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 34px 50px;
+  gap: 30px;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.menu-link {
+  padding: 12px 20px;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+}
+.menu-link {
+  position: relative;
+}
+.menu-link::after {
+  position: absolute;
+  /* width: calc(100% - 40px); */
+  width: 0;
+  bottom: 0;
+  height: 2px;
+  left: 50%;
+  background-color: var(--white-color);
+  transform: translateX(-50%);
+  transition: width 0.2s;
+  content: "";
+}
+
+.menu-link:hover {
+  text-decoration: none;
+}
+
+.menu-link:hover::after {
+  width: calc(100% - 40px);
+}
+
+/* Hero section*/
+.section-hero .container {
+  margin-top: 50px;
+}
+.section-hero .section-heading .section-subtitle {
+  margin-top: 20px;
+}
+.section-hero .section-title {
+  font-size: 67px;
+  line-height: 1.1;
+}
+.hero-inner {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start; /* Vẫn đứng ở trên nhưng 2 item không cao bằng nhau*/
+}
+
+.hero-content,
+.hero-media {
+  flex: 1;
+}
+
+.hero-media {
+  overflow: hidden; /*Không cho phép phần tử trong tràn ra khỏi class cha*/
+  border-radius: 20px;
+}
+
+.section-hero .section-heading .btn {
+  margin-top: 40px;
+}
+
+.statis-list {
+  display: flex;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+.statis-item {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.statis-total {
+  font-size: 28px;
+  font-weight: 700;
+  font-family: var(--secondary-font);
+}
+.statis-text {
+  font-size: 24px;
+  line-height: 1.6;
+}
+
+.hero-media-info {
+  padding: 22px 20px;
+  background-color: var(--light-gray-color);
+}
+
+.nft-artist-title {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.nft-artist-info {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
+}
+
+.nft-artist-avatar {
+  overflow: hidden; /*Không cho phép phần tử trong tràn ra khỏi class cha*/
+  border-radius: 50%; /* Tạo viền hình tròn */
+  width: 24px;
+  height: 24px;
+}
+
+/* Trending Section*/
+
+/* .section-trending .section-heading .section-subtitle {
+  margin-top: 10px;
+} */
+
+.trending-title {
+  display: flex;
+  gap: 15px;
+  padding: 15px 0;
+}
+
+/* .trending-image {
+  width: 100px;
+  height: 100px;
+} */
+.trending-item {
+  background-color: var(--primary-color);
+}
+
+.trending-image {
+  width: 100px;
+  height: 100px;
+}
+
+.btn-text {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.6;
+  font-family: var(--secondary-font);
+}
+
+.trending-item-3 .trending-title .btn {
+  padding: 32px 15px;
+}
+
+.section-trending .hero-media-info {
+  background-color: transparent;
+  padding: 0;
+}
+
+/* Creator Section*/
+
+.section-creator .section-heading,
+.section-discover .section-heading {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.creator-btn .btn {
+  height: 60px;
+  padding: 0 50px 0 48px;
+  right: 0;
+  bottom: 0;
+  position: absolute;
+  background-color: transparent;
+}
+
+.creator-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+
+.creator-item {
+  width: 25%;
+}
+
+.creator-item:nth-child(n + 5) {
+  margin-top: 30px;
+}
+
+.creator-box {
+  padding: 0 15px;
+}
+
+.creator-card {
+  padding: 20px;
+  text-align: center;
+  border-radius: 20px;
+  background-color: var(--light-gray-color);
+  position: relative;
+}
+
+.creator-rank {
+  left: 20px;
+  top: 18px;
+  background-color: var(--gray-color);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: flex;
+  color: var(--light-smoke-gray);
+  font-family: var(--secondary-font);
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}
+
+.creator-avatar {
+  margin-left: 35px;
+  margin-right: 25px;
+}
+.creator-avatar img {
+  display: inline;
+}
+
+.creator-info {
+  margin-top: 15px;
+}
+
+.creator-name {
+  font-weight: 600;
+  font-size: 22px;
+  line-height: 30px;
+  font-family: var(--primary-font);
+}
+
+.creator-sale {
+  display: flex;
+  gap: 5px;
+  margin-top: 5px;
+}
+
+.creator-sale .label {
+  color: var(--light-smoke-gray);
+  padding: 0 5px;
+}
+
+.creator-sale .coin {
+  font-family: "Space Mono", serif;
+}
+
+/* Category Section*/
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 -15px;
+}
+.category-item:nth-child(n + 5) {
+  margin-top: 30px;
+}
+.category-box {
+  padding: 0 15px;
+}
+.category-card {
+  text-align: center;
+  overflow: hidden;
+  border-radius: 20px;
+}
+.category-card img {
+  display: inline;
+}
+.category-image {
+  height: 240px;
+}
+.category-title {
+  padding: 20px 30px 25px;
+  text-align: left;
+  background-color: var(--light-gray-color);
+}
+.catergory-name {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Discover Section*/
+
+.section-discover .container {
+  margin-bottom: 80px;
+}
+
+.discover-list {
+  flex: 1;
+  gap: 30px;
+  display: flex;
+}
+.discover-item {
+  border-radius: 20px;
+  overflow: hidden;
+  background-color: var(--light-gray-color);
+}
+.discover-info {
+  padding: 20px 30px 25px;
+}
+.discover-info .nft-artist-info {
+  gap: 10px;
+  margin-top: 5px;
+}
+.discover-info .nft-artist-name {
+  font-family: var(--secondary-font);
+}
+
+.discover-sale {
+  display: flex;
+  gap: 8px;
+  justify-content: space-between;
+  margin-top: 25px;
+}
+.price,
+.highest-bid {
+  width: calc((100% - 18px) / 2);
+}
+.price .value {
+  text-align: left;
+}
+.highest-bid .destination {
+  text-align: right;
+}
+.destination {
+  font-size: 12px;
+  font-family: var(--secondary-font);
+  color: var(--light-smoke-gray);
+  line-height: 1.1;
+}
+.value {
+  margin-top: 8px;
+  font-family: var(--secondary-font);
+  text-align: right;
+}
+
+/*Banner Section*/
+.hero-banner {
+  position: relative;
+  width: 100%;
+  /* aspect-ratio: 1280/640; Đặt chiều cao của banner */
+  overflow: hidden;
+  height: 640px;
+}
+.banner-image {
+  width: 100%;
+  height: 100%;
+  background-image: url(/DAY5-NFT_Market_Place/images/img_banner.jpg);
+  background-size: cover; /* Ảnh lấp đầy vùng nền */
+  background-position: center; /* Ảnh nằm giữa */
+  background-repeat: no-repeat; /* Không lặp ảnh */
+  /* background-attachment: fixed; */
+  position: relative;
+}
+.banner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    rgba(162, 89, 255, 0),
+    rgba(162, 89, 255, 1)
+  );
+  z-index: 1;
+  pointer-events: none; /* Đảm bảo không ảnh hưởng đến các tương tác */
+}
+.banner-image img {
+  display: inline;
+}
+.section-banner .container {
+  position: absolute;
+  margin: 0;
+  bottom: 5%;
+  left: 0;
+  right: 0;
+  margin: auto;
+
+  z-index: 2;
+}
+.banner-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  position: relative;
+}
+.banner-artist {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  gap: 30px;
+}
+.banner-artist .nft-artist-info {
+  padding: 10px 20px;
+  background-color: var(--light-gray-color);
+  border-radius: 20px;
+  margin: 0;
+}
+.banner-title {
+  font-size: 51px;
+  line-height: 1.1;
+  font-weight: 600;
+}
+.banner-artist .btn {
+  color: black;
+}
+.auction-name {
+  font-family: var(--secondary-font);
+  font-size: 12px;
+  line-height: 1.1;
+}
+.banner-timer {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding: 30px;
+  background-color: var(--light-gray-color);
+  border-radius: 20px;
+  z-index: 1;
+}
+.auction-timer {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.timer-name {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.time {
+  font-weight: 700;
+  font-family: var(--secondary-font);
+  font-size: 38px;
+  line-height: 1.2;
+}
+.timer-colon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.colon {
+  font-family: var(--secondary-font);
+  font-size: 28px;
+  font-weight: 700;
+}
+
+/* Section Works*/
+.section-works .container {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.work-box {
+  padding: 10px 30px 30px;
+}
+.work-list {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+}
+.work-item {
+  text-align: center;
+  width: calc(100% / 3);
+  background-color: var(--light-gray-color);
+  border-radius: 20px;
+}
+
+.work-item img {
+  display: inline;
+}
+
+.work-title {
+  font-weight: 600;
+  font-size: 22px;
+}
+.work-text {
+  margin-top: 10px;
+}
+.work-content {
+  margin-top: 20px;
+}
+
+.section-subcrise .container {
+  margin-top: 60px;
+  margin-bottom: 80px;
+}
+.section-subcrise-content {
+  background-color: var(--light-gray-color);
+  border-radius: 20px;
+  padding: 60px;
+}
+.section-subcrise-box {
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+.section-subcrise .section-subtitle {
+  margin-top: 10px;
+}
+.subcrise-input {
+  margin-top: 20px;
+  display: flex;
+  position: relative;
+}
+.subcrise-input .input {
+  width: 100%;
+  height: 60px;
+  border-radius: 20px;
+  padding: 16px 0 16px 20px;
+}
+.subcrise-input .input::placeholder {
+  color: var(--gray-color);
+}
+
+.subcrise-input .btn {
+  position: absolute;
+  padding-left: 60px;
+  padding-right: 60px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/*Footer*/
+
+footer {
+  background-color: var(--light-gray-color);
+  color: #cccccc;
+}
+.footer .container {
+  margin-top: 80px;
+  margin-bottom: 0;
+}
+.footer-list {
+  display: flex;
+  justify-content: space-between;
+  gap: 31px;
+}
+
+.social-list {
+  display: flex;
+  gap: 10px;
+}
+.social-list img {
+  width: 32px;
+  height: 32px;
+}
+/* .footer-list .footer-item:nth-child(2) {
+  margin: 0 31px;
+} */
+.footer-contact {
+  padding-right: 84px;
+}
+.contact-box {
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.footer-content {
+  max-width: 238px;
+  width: 100%;
+  margin-top: 30px;
+}
+.footer-text {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+.footer-explore {
+  padding-right: 107px;
+}
+.explore-title {
+  color: var(--white-color);
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+  font-family: var(--secondary-font);
+}
+.explore-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+.explore-content .menu-link {
+  padding: 0;
+  color: #cccccc;
+}
+.explore-content .menu-link:hover::after {
+  width: calc(100%);
+}
+.digest-title {
+  color: var(--white-color);
+}
+.digest-content {
+  max-width: 420px;
+  width: 100%;
+}
+.digest-text {
+  padding-right: 90px;
+}
