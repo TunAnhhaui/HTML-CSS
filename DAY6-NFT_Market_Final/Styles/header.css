@@ -1,0 +1,144 @@
+.header {
+  position: fixed; /* Cố định vị trí */
+  top: 0; /* Cách mép trên của trang 0px */
+  left: 0; /* Cách mép trái của trang 0px */
+  width: 100%; /* Chiếm toàn bộ chiều rộng trang */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  gap: 30px;
+  z-index: 1000; /* Đảm bảo nó nằm trên các phần tử khác */
+  background-color: var(--gray-color);
+}
+
+.logo a {
+  display: block;
+}
+
+.logo img {
+  height: 32px;
+}
+
+.menu {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.menu-link {
+  padding: 12px 20px;
+  font-weight: 600;
+}
+
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.btn-icon {
+  width: 20px;
+  height: 20px;
+}
+.menu-link {
+  position: relative;
+}
+.menu-link::after {
+  position: absolute;
+  /* width: calc(100% - 40px); */
+  width: 0;
+  bottom: 0;
+  height: 2px;
+  left: 50%;
+  background-color: var(--white-color);
+  transform: translateX(-50%);
+  transition: width 0.2s ease-out;
+  content: "";
+}
+
+.menu-link:hover {
+  text-decoration: none;
+}
+
+.menu-link:hover::after {
+  width: calc(100% - 40px);
+}
+@media screen and (max-width: 1024px) {
+  .section {
+    padding: 10px 0;
+  }
+  .container {
+    width: 100%;
+    max-width: 750px;
+  }
+
+  .section-hero {
+    padding-bottom: 50px;
+  }
+
+  .section-hero .container {
+    padding-top: 134px;
+  }
+
+  .header {
+    padding: 15px 50px;
+  }
+
+  .logo img {
+    height: 24px;
+  }
+
+  .header-nav {
+    /* display: none; */
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100vh; /* Cao toàn màn hình*/
+    flex-direction: column;
+    background-color: var(--light-gray-color);
+    padding: 30px;
+    transform: translateX(100%); /*Trượt hết kích thước ra ngoài màn hình*/
+    /* transition: ease-in 0.2s; */
+    z-index: 999;
+  }
+  .header-nav.trans {
+    transition: ease-out 0.3s;
+  }
+
+  .header-nav.is-open {
+    transform: translate(0);
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    position: relative;
+    max-width: 375px;
+  }
+  .section-hero {
+    padding-bottom: 10px;
+  }
+
+  .header {
+    padding: 15px 30px;
+  }
+
+  .header-nav {
+    width: 250px;
+  }
+  .section-hero .container {
+    padding-top: 94px;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu-btn {
+    display: none;
+  }
+}

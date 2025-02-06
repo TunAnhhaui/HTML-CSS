@@ -1,0 +1,123 @@
+.register-title {
+  font-weight: 600;
+  font-size: 51px;
+  line-height: 1.1;
+}
+.register-text {
+  font-size: 22px;
+  line-height: 1.6;
+  margin-top: 20px;
+}
+.register-list {
+  display: flex;
+  gap: 60px;
+}
+.register-item:first-child {
+  width: calc((100% - 60px) / 2);
+  height: 640px;
+  background-image: url("../../images/img_hero_banner.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.register-item:last-child {
+  display: flex;
+  align-items: center;
+}
+
+.register-form {
+  max-width: 330px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 40px;
+}
+.register-input:nth-child(n + 2) {
+  margin-top: 15px;
+}
+.register-input {
+  width: 100%;
+  position: relative;
+}
+
+.register-input .input {
+  padding: 12px 20px 12px 52px;
+}
+.register-input .input::placeholder {
+  color: var(--gray-color);
+}
+.register-input img {
+  position: absolute;
+  bottom: 13px;
+  left: 20px;
+}
+.register-form .btn {
+  width: 100%;
+  padding: 12px 0;
+  margin-top: 30px;
+  border: none;
+}
+.register-content {
+  max-width: 460px;
+  width: 100%;
+}
+
+@media screen and (min-width: 1025px) {
+  .section-banner {
+    padding: 100px 0 40px;
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .section-banner {
+    padding: 54px 0 0;
+  }
+  .register-box {
+    padding-right: 72px;
+  }
+  .register-form {
+    padding: 0;
+  }
+  .register-title {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+  .register-text {
+    line-height: 1.4;
+    font-size: 16px;
+  }
+  .register-form {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .register-list {
+    flex-direction: column;
+    gap: 30px;
+  }
+  .register-item:first-child {
+    height: 232px;
+    width: 100%;
+  }
+  .register-item:last-child {
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+  .register-box {
+    padding: 0;
+    max-width: 375px;
+    padding: 0 30px;
+  }
+}
+@media screen and (max-width: 345px) {
+  .register-title {
+    font-size: 28px;
+    line-height: 1.4;
+  }
+  .register-text {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,210 @@
+/* Breack point*/
+/* Tablet */
+/* 
+  @media screen and (max-width: 1024px) 
+  Màn hình nhỏ hơn 1024px sẽ áp dụng css  : max-width
+  Màn hình nhỏ hơn 1024px sẽ áp dụng css  : min-width
+*/
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+    max-width: 750px;
+  }
+
+  .section-title,
+  .section-subtitle {
+    text-transform: none; /* Định dạng mỗi từ dược viết hoa chữ cái đầu */
+  }
+
+  .section-hero {
+    padding-bottom: 50px;
+  }
+
+  .section-hero .container {
+    padding-top: 134px;
+  }
+
+  .section-hero .section-title {
+    font-size: 38px;
+    font-weight: 600;
+    line-height: 1.2;
+  }
+
+  .section-hero .section-subtitle {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .statis-total {
+    font-size: 22px;
+    line-height: 1.6;
+    font-weight: 700;
+    font-family: var(--secondary-font);
+  }
+
+  .statis-text {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .section-hero .btn,
+  .statis-list {
+    margin-top: 20px;
+  }
+
+  .hero-image {
+    height: 221px;
+    overflow: hidden;
+  }
+  .hero-image img {
+    height: 221px;
+    width: 100%;
+  }
+
+  /* COLLECTION SECTION */
+  .collection-list {
+    margin-top: 40px;
+  }
+  .collection-item:last-child {
+    display: none;
+  }
+
+  /* CREATOR SECTION */
+  .section-content {
+    margin-top: 40px;
+  }
+  .section-title {
+    font-size: 28px;
+    font-weight: 600;
+  }
+
+  .section-subtitle {
+    font-size: 16px;
+  }
+  .creator-item {
+    width: calc((100% - 30px) / 2);
+  }
+  .creator-item:nth-child(n + 7) {
+    display: none;
+  }
+  .creator-card {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+  .creator-rank {
+    left: 12px;
+    top: 13px;
+  }
+  .creator-avatar {
+    max-width: 60px;
+    max-height: 60px;
+  }
+
+  .creator-sale {
+    gap: 5px;
+  }
+  .creator-sale .label {
+    padding-right: 13px;
+  }
+  .creator-sale .coin {
+    padding-right: 14px;
+  }
+
+  /* CATEGORY SECTION */
+  .category-list {
+    margin-top: 40px;
+  }
+  .category-item img {
+    width: 100%;
+    height: 142px;
+  }
+
+  .category-title {
+    padding: 20px 20px 25px;
+    font-weight: 600;
+    font-size: 16px;
+  }
+
+  /* SECTION BANNER */
+  .banner-content {
+    gap: 0;
+  }
+
+  .section-banner .container {
+    padding-right: 50px;
+  }
+
+  .banner-title {
+    font-size: 38px;
+    line-height: 1.2;
+  }
+
+  /* HOW IT WORK SECTION */
+  .how-section .work-list {
+    margin-top: 40px;
+  }
+  .work-item {
+    padding: 10px 20px 30px;
+  }
+  .work-image > img {
+    width: 160px;
+    height: 160px;
+    padding-left: 5px;
+  }
+  .work-title {
+    font-size: 16px;
+  }
+  .work-text {
+    padding-left: 1px;
+    font-size: 12px;
+    line-height: 1.4;
+  }
+
+  /* PROMOTION SECTION */
+
+  .promotion-content {
+    padding: 40px 30px;
+    gap: 30px;
+    justify-content: flex-end;
+  }
+
+  .weekly-digest,
+  .promotion-image {
+    width: calc((100% - 30px) / 2);
+    height: 100%;
+  }
+  .promotion-image {
+    height: 280px;
+  }
+  .promotion-title {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 1.4;
+  }
+  .promotion-text {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .promotion-section .input {
+    padding: 12px 20px;
+    margin-bottom: 16px;
+  }
+  .promotion-section .promotion-input .btn {
+    position: static;
+    width: 100%;
+    padding: 12px 20px;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .menu-btn {
+    display: none;
+  }
+  .creator-info {
+    margin-top: 20px;
+  }
+}

@@ -1,0 +1,189 @@
+@media screen and (max-width: 767px) {
+  .container {
+    width: 100%;
+    position: relative;
+    max-width: 375px;
+  }
+  .section-hero {
+    padding-bottom: 10px;
+  }
+
+  .header {
+    padding: 5px 30px;
+  }
+
+  .header-nav {
+    width: 250px;
+  }
+
+  .section-hero .container {
+    padding-top: 94px;
+  }
+
+  .section-hero .section-title {
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  .section-hero .section-heading .section-subtitle {
+    margin: 10px 0 40px;
+  }
+
+  .hero-image {
+    height: 206px;
+    overflow: hidden;
+  }
+  .hero-image img {
+    height: 206px;
+    width: 100%;
+  }
+  .section-hero .btn {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .section-hero .section-heading .btn,
+  .statis-list {
+    margin-top: 40px;
+  }
+  /* COLLECTION SECTION */
+  .collection-item:nth-child(n + 2) {
+    display: none;
+  }
+  .collection-thumb-btn {
+    font-size: 16px;
+  }
+
+  /* CREATOR SECTION */
+  .creator-section .container {
+    padding-bottom: 140px;
+  }
+  .creator-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .creator-section .section-content {
+    margin-top: 40px;
+  }
+  .creator-item {
+    width: 100%;
+  }
+  .creator-card {
+    justify-content: space-between;
+  }
+  .creator-sale .label,
+  .creator-sale .coin {
+    font-size: 16px;
+    padding: 0;
+  }
+
+  .section-heading .btn {
+    position: absolute;
+    justify-content: center;
+    bottom: 40px;
+    width: calc(100% - 60px);
+  }
+
+  /* CATEGORY SECTION */
+  .category-list {
+    gap: 20px;
+  }
+
+  .category-item {
+    width: calc((100% - 20px) / 2);
+  }
+
+  /* DISCOVER SECTION */
+  .discover-section .container {
+    padding-bottom: 160px;
+  }
+  .discover-section .collection-list {
+    flex-direction: column;
+  }
+  .discover-section .collection-item:nth-child(n + 2) {
+    display: block;
+  }
+  .discover-section .section-heading .btn {
+    bottom: 60px;
+  }
+  .discover-section .nft-artist-name {
+    font-family: var(--secondary-font);
+  }
+
+  /* SECTION BANNER */
+
+  .section-banner {
+    padding: 90px 0 10px;
+    height: 590px;
+  }
+  .banner-content {
+    position: relative;
+  }
+  .section-banner .container {
+    padding-right: 30px;
+  }
+  .banner-title {
+    padding-bottom: 204px;
+  }
+  .section-banner .btn {
+    width: 100%;
+  }
+  .banner-timer {
+    bottom: 90px;
+    position: absolute;
+    width: calc(100%);
+  }
+
+  /* HOW IT WORK SECTION */
+
+  .work-list {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .work-item {
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+  }
+
+  .work-image > img {
+    width: 100px;
+    height: 100px;
+    padding: 0;
+  }
+  .work-content {
+    width: calc(100% - 120px);
+    margin-top: 0;
+    text-align: left;
+    color: rgba(255, 255, 255, 1);
+    margin-left: 20px;
+  }
+
+  /* PROMOTION SECTION */
+  .promotion-content {
+    flex-direction: column;
+    background-color: var(--gray-color);
+    padding: 0;
+  }
+  .promotion-image img {
+    width: 100%;
+    height: 255px;
+  }
+
+  .weekly-digest,
+  .promotion-image {
+    width: calc((100%));
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 362px) {
+  .creator-sale .label,
+  .creator-sale .coin {
+    font-size: 14px;
+  }
+}

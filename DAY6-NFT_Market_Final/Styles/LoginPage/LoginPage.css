@@ -1,0 +1,35 @@
+.login-form {
+  max-width: 320px;
+  width: 100%;
+}
+
+.login-form .btn {
+  padding: 16px 20px 16px 40px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.register-item:first-child {
+  background-image: url("../../images/img_login_banner.png");
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-top: 40px;
+}
+.login-form img {
+  width: 40px;
+  height: 40px;
+}
+@media screen and (max-width: 1025px) {
+  .login-form .btn {
+    padding: 14px 20px 14px 40px;
+  }
+  .login-form img {
+    width: 32px;
+    height: 32px;
+  }
+}

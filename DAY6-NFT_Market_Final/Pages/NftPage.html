@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NFT</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../Styles/reset.css" />
+    <link rel="stylesheet" href="../Styles/header.css" />
+    <link rel="stylesheet" href="../Styles/footer.css" />
+    <link rel="stylesheet" href="../Styles/BrowserPage/browser.css" />
+    <link rel="stylesheet" href="../Styles/NftPage/NftPage.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1 class="logo">
+        <a href="HomePage.html"
+          ><img src="../images/Logo.png" alt="NFT Market Place"
+        /></a>
+      </h1>
+
+      <div class="header-right">
+        <div class="header-nav js-header-nav">
+          <nav class="navbar">
+            <ul class="menu">
+              <li class="menu-item">
+                <a class="menu-link" href="BrowserPage.html">Marketplace</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="Ranking.html">Rankings</a>
+              </li>
+              <li class="menu-item">
+                <a class="menu-link" href="LoginPage.html">Connect a wallet</a>
+              </li>
+              <li class="menu-item">
+                <button class="btn btn-primary btn-small js-btn-register">
+                  <span class="btn-icon"
+                    ><img src="../images/User.png" alt="User Icon"
+                  /></span>
+                  <span class="btn-text">Sign Up</span>
+                </button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+
+      <button type="button" class="menu-btn js-btn-menu">
+        <img src="../images/icon_menu.png" alt="Menu Icon" />
+      </button>
+    </header>
+    <main>
+      <section class="nft-info-section">
+        <div class="banner"></div>
+        <div class="container">
+          <div class="nft-info">
+            <div class="section-content">
+              <h2 class="content-title">The Orbitians</h2>
+              <p class="content-text">Minted on Sep 30, 2022</p>
+            </div>
+            <div class="nft-artist">
+              <span class="nft-title">Created By</span>
+              <div class="nft-artist-info">
+                <div class="nft-artist-avatar">
+                  <img
+                    src="../images/img_creator_rustyrobot.png"
+                    alt="NFT Artist Avatar"
+                  />
+                </div>
+                <span class="nft-artist-name">Orbitian</span>
+              </div>
+            </div>
+            <div class="nft-content">
+              <span class="nft-title">Description</span>
+              <div class="nft-description">
+                <p class="nft-text">
+                  The Orbitians <br />
+                  is a collection of 10,000 unique NFTs on the Ethereum
+                  blockchain, <br /><br />
+                  There are all sorts of beings in the NFT Universe. The most
+                  advanced and friendly of the bunch are Orbitians. <br />
+                  <br />
+                  They live in a metal space machines, high up in the sky and
+                  only have one foot on Earth. <br />
+                  <br />These Orbitians are a peaceful race, but they have been
+                  at war with a group of invaders for many generations. The
+                  invaders are called Upside-Downs, because of their inverted
+                  bodies that live on the ground, yet do not know any other way
+                  to be. Upside-Downs believe that they will be able to win this
+                  war if they could only get an eye into Orbitian territory, so
+                  they've taken to make human beings their target.
+                </p>
+              </div>
+            </div>
+
+            <div class="nft-details">
+              <span class="nft-title">Details</span>
+              <a href="" class="detail-link">
+                <span class="icon"
+                  ><img src="../images/img_icon_global.png" alt=""
+                /></span>
+                <span class="link">View on Etherscan</span>
+              </a>
+              <a href="" class="detail-link">
+                <span class="icon"
+                  ><img src="../images/img_icon_global.png" alt=""
+                /></span>
+                <span class="link">View Original</span>
+              </a>
+            </div>
+            <div class="nft-tags">
+              <div class="nft-title">Tags</div>
+              <ul class="tags-list">
+                <li class="tag-item">
+                  <a href="" class="tag-link">ANIMATION</a>
+                </li>
+                <li class="tag-item">
+                  <a href="" class="tag-link">illustration</a>
+                </li>
+                <li class="tag-item">
+                  <a href="" class="tag-link">moon</a>
+                </li>
+                <li class="tag-item">
+                  <a href="" class="tag-link">moon</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="banner-timer">
+            <div class="timer">
+              <span class="auction-text">Auction ends in:</span>
+              <div class="auction-timer">
+                <div class="timer-block">
+                  <span class="timer-number">59</span>
+                  <span class="timer-label">Hours</span>
+                </div>
+                <span class="timer-separator">:</span>
+                <div class="timer-block">
+                  <span class="timer-number">59</span>
+                  <span class="timer-label">Minutes</span>
+                </div>
+                <span class="timer-separator">:</span>
+                <div class="timer-block">
+                  <span class="timer-number">59</span>
+                  <span class="timer-label">Seconds</span>
+                </div>
+              </div>
+            </div>
+            <button class="btn btn-primary" type="button">Place Bid</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="nft-section">
+        <div class="container">
+          <div class="section-content">
+            <h2 class="content-title">More from this artist</h2>
+            <button type="button" class="btn btn-outline">
+              <img src="../images/img_icon_right.png" alt="Icon Arrow Right" />
+              <p class="btn-text">Go To Artist Page</p>
+            </button>
+          </div>
+          <ul class="collection-list">
+            <li class="collection-item trans">
+              <div class="collection-image">
+                <img
+                  src="../images/img_browser_fox.png"
+                  alt="Collection Image"
+                />
+              </div>
+              <div class="collection-info">
+                <div class="discover-info">
+                  <div class="nft-artist">
+                    <h3 class="nft-artist-title">Foxy Life</h3>
+                    <div class="nft-artist-info">
+                      <div class="nft-artist-avatar">
+                        <img
+                          src="../images/img_creator_rustyrobot.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <span class="nft-artist-name">Orbitian</span>
+                    </div>
+                  </div>
+                  <div class="nft-sale">
+                    <div class="nft-price">
+                      <div class="label">Price</div>
+                      <div class="coin">1.63 ETH</div>
+                    </div>
+                    <div class="nft-price">
+                      <div class="label">Highest Bid</div>
+                      <div class="coin">0.33 wETH</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="collection-item trans">
+              <div class="collection-image">
+                <img src="../images/img_nft_cat.png" alt="Collection Image" />
+              </div>
+              <div class="collection-info">
+                <div class="discover-info">
+                  <div class="nft-artist">
+                    <h3 class="nft-artist-title">Cat from future</h3>
+                    <div class="nft-artist-info">
+                      <div class="nft-artist-avatar">
+                        <img
+                          src="../images/img_creator_rustyrobot.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <span class="nft-artist-name">Orbitian</span>
+                    </div>
+                  </div>
+                  <div class="nft-sale">
+                    <div class="nft-price">
+                      <div class="label">Price</div>
+                      <div class="coin">1.63 ETH</div>
+                    </div>
+                    <div class="nft-price">
+                      <div class="label">Highest Bid</div>
+                      <div class="coin">0.33 wETH</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="collection-item trans">
+              <div class="collection-image">
+                <img
+                  src="../images/img_collection_animal.png"
+                  alt="Collection Image"
+                />
+              </div>
+              <div class="collection-info">
+                <div class="discover-info">
+                  <div class="nft-artist">
+                    <h3 class="nft-artist-title">Psycho Dog</h3>
+                    <div class="nft-artist-info">
+                      <div class="nft-artist-avatar">
+                        <img
+                          src="../images/img_creator_rustyrobot.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <span class="nft-artist-name">Orbitian</span>
+                    </div>
+                  </div>
+                  <div class="nft-sale">
+                    <div class="nft-price">
+                      <div class="label">Price</div>
+                      <div class="coin">1.63 ETH</div>
+                    </div>
+                    <div class="nft-price">
+                      <div class="label">Highest Bid</div>
+                      <div class="coin">0.33 wETH</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="collection-item trans">
+              <div class="collection-image">
+                <img
+                  src="../images/img_browser_bear.png"
+                  alt="Collection Image"
+                />
+              </div>
+              <div class="collection-info">
+                <div class="discover-info">
+                  <div class="nft-artist">
+                    <h3 class="nft-artist-title">Designer Bear</h3>
+                    <div class="nft-artist-info">
+                      <div class="nft-artist-avatar">
+                        <img
+                          src="../images/img_creator_rustyrobot.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <span class="nft-artist-name">Orbitian</span>
+                    </div>
+                  </div>
+                  <div class="nft-sale">
+                    <div class="nft-price">
+                      <div class="label">Price</div>
+                      <div class="coin">1.63 ETH</div>
+                    </div>
+                    <div class="nft-price">
+                      <div class="label">Highest Bid</div>
+                      <div class="coin">0.33 wETH</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="collection-item trans">
+              <div class="collection-image">
+                <img
+                  src="../images/img_browser_fox.png"
+                  alt="Collection Image"
+                />
+              </div>
+              <div class="collection-info">
+                <div class="discover-info">
+                  <div class="nft-artist">
+                    <h3 class="nft-artist-title">Magic Mushroom 0325</h3>
+                    <div class="nft-artist-info">
+                      <div class="nft-artist-avatar">
+                        <img
+                          src="../images/img_creator_rustyrobot.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <span class="nft-artist-name">Orbitian</span>
+                    </div>
+                  </div>
+                  <div class="nft-sale">
+                    <div class="nft-price">
+                      <div class="label">Price</div>
+                      <div class="coin">1.63 ETH</div>
+                    </div>
+                    <div class="nft-price">
+                      <div class="label">Highest Bid</div>
+                      <div class="coin">0.33 wETH</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="collection-item trans">
+              <div class="collection-image">
+                <img
+                  src="../images/img_browser_fox.png"
+                  alt="Collection Image"
+                />
+              </div>
+              <div class="collection-info">
+                <div class="discover-info">
+                  <div class="nft-artist">
+                    <h3 class="nft-artist-title">Magic Mushroom 0325</h3>
+                    <div class="nft-artist-info">
+                      <div class="nft-artist-avatar">
+                        <img
+                          src="../images/img_creator_rustyrobot.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <span class="nft-artist-name">Orbitian</span>
+                    </div>
+                  </div>
+                  <div class="nft-sale">
+                    <div class="nft-price">
+                      <div class="label">Price</div>
+                      <div class="coin">1.63 ETH</div>
+                    </div>
+                    <div class="nft-price">
+                      <div class="label">Highest Bid</div>
+                      <div class="coin">0.33 wETH</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="collection-item trans">
+              <div class="collection-image">
+                <img
+                  src="../images/img_browser_fox.png"
+                  alt="Collection Image"
+                />
+              </div>
+              <div class="collection-info">
+                <div class="discover-info">
+                  <div class="nft-artist">
+                    <h3 class="nft-artist-title">Magic Mushroom 0325</h3>
+                    <div class="nft-artist-info">
+                      <div class="nft-artist-avatar">
+                        <img
+                          src="../images/img_creator_rustyrobot.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <span class="nft-artist-name">Orbitian</span>
+                    </div>
+                  </div>
+                  <div class="nft-sale">
+                    <div class="nft-price">
+                      <div class="label">Price</div>
+                      <div class="coin">1.63 ETH</div>
+                    </div>
+                    <div class="nft-price">
+                      <div class="label">Highest Bid</div>
+                      <div class="coin">0.33 wETH</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="collection-item trans">
+              <div class="collection-image">
+                <img
+                  src="../images/img_browser_fox.png"
+                  alt="Collection Image"
+                />
+              </div>
+              <div class="collection-info">
+                <div class="discover-info">
+                  <div class="nft-artist">
+                    <h3 class="nft-artist-title">Magic Mushroom 0325</h3>
+                    <div class="nft-artist-info">
+                      <div class="nft-artist-avatar">
+                        <img
+                          src="../images/img_creator_rustyrobot.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <span class="nft-artist-name">Orbitian</span>
+                    </div>
+                  </div>
+                  <div class="nft-sale">
+                    <div class="nft-price">
+                      <div class="label">Price</div>
+                      <div class="coin">1.63 ETH</div>
+                    </div>
+                    <div class="nft-price">
+                      <div class="label">Highest Bid</div>
+                      <div class="coin">0.33 wETH</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li class="collection-item trans">
+              <div class="collection-image">
+                <img
+                  src="../images/img_browser_fox.png"
+                  alt="Collection Image"
+                />
+              </div>
+              <div class="collection-info">
+                <div class="discover-info">
+                  <div class="nft-artist">
+                    <h3 class="nft-artist-title">Magic Mushroom 0325</h3>
+                    <div class="nft-artist-info">
+                      <div class="nft-artist-avatar">
+                        <img
+                          src="../images/img_creator_rustyrobot.png"
+                          alt="NFT Artist Avatar"
+                        />
+                      </div>
+                      <span class="nft-artist-name">Orbitian</span>
+                    </div>
+                  </div>
+                  <div class="nft-sale">
+                    <div class="nft-price">
+                      <div class="label">Price</div>
+                      <div class="coin">1.63 ETH</div>
+                    </div>
+                    <div class="nft-price">
+                      <div class="label">Highest Bid</div>
+                      <div class="coin">0.33 wETH</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="contact-box">
+            <div class="logo">
+              <a href="HomePage.html"
+                ><img src="../images/Logo.png" alt="NFT Market Place"
+              /></a>
+            </div>
+            <div class="contact-social">
+              <div class="contact-content">
+                NFT marketplace UI created with Anima for Figma.
+              </div>
+              <div class="contact-info">
+                <span class="social-text">Join our community</span>
+                <div class="social-icon">
+                  <img
+                    src="../images/img_discord_icon.png"
+                    alt="Discord Icon"
+                  />
+                  <img src="../images/img_ytb_icon.png" alt="Youtube Icon" />
+                  <img
+                    src="../images/img_twitter_icon.png"
+                    alt="Twitter Icon"
+                  />
+                  <img
+                    src="../images/img_insta_icon.png"
+                    alt="Instagram Icon"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="menu-box">
+            <span class="menu-title">Explore</span>
+            <ul class="menu">
+              <li class="menu-item trans">
+                <a href="BrowserPage.html" class="menu-link">Marketplace</a>
+              </li>
+              <li class="menu-item">
+                <a href="Ranking.html" class="menu-link">Rankings</a>
+              </li>
+              <li class="menu-item">
+                <a href="LoginPage.html" class="menu-link">Connect a wallet</a>
+              </li>
+            </ul>
+          </div>
+          <div class="weekly-digest">
+            <span class="promotion-title">Join Our Weekly Digest</span>
+            <p class="promotion-text">
+              Get exclusive promotions & updates straight to your inbox.
+            </p>
+            <div class="digest-content">
+              <div class="promotion-input">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Enter your email here"
+                />
+                <button class="btn btn-primary">
+                  <span class="btn-text">Subscribe</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright">
+          <span class="copyright">Ⓒ NFT Market. Use this template freely.</span>
+        </div>
+      </div>
+    </footer>
+  </body>
+  <script src="../Js/Header.js"></script>
+</html>

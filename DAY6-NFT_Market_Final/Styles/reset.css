@@ -1,0 +1,132 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+:root {
+  /* Colors */
+  --primary-color: #a259ff;
+  --gray-color: #2b2b2b;
+  --white-color: #fff;
+  --light-gray-color: #3b3b3b;
+  --light-smoke-gray: #858584;
+  --dark-white-color: #cccccc;
+  --dark-gray-transparent-color: #3b3b3b80;
+  --green-color: #00ac4f;
+  /* Fonts */
+  --primary-font: "Work Sans", serif;
+  --secondary-font: "Space Mono", serif;
+}
+
+body {
+  background-color: var(--gray-color);
+  color: var(--white-color);
+  font-weight: 400;
+  line-height: 1.4;
+  font-family: var(--primary-font);
+}
+.wrap {
+  max-width: 100%;
+  margin: 0 auto;
+}
+ol,
+ul {
+  list-style-type: none;
+}
+
+button,
+.category-item,
+.trending-image,
+.discover-item,
+.social-icon {
+  background-color: transparent;
+  outline: none;
+  border: 0;
+  color: var(--white-color);
+  cursor: pointer;
+}
+
+button,
+input {
+  font: inherit; /*Ep kế thừa bằng inherit*/
+}
+button:focus,
+input:focus {
+  outline: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  object-fit: cover;
+}
+a {
+  display: inline-block;
+  color: var(--white-color);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+select,
+textarea,
+input {
+  color: var(--gray-color);
+}
+.section {
+  padding: 50px 0;
+  /* position: relative; */
+}
+
+.container {
+  width: 100%;
+  max-width: 1110px; /* Do 1050 content + 60px padding trai phai*/
+  padding: 30px;
+  margin: 0px auto;
+}
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  background-color: #a259ff;
+  border: 2px solid transparent;
+  padding: 19px 50px;
+}
+.btn > img {
+  display: block;
+}
+
+.btn.btn-primary {
+  background-color: var(--primary-color);
+}
+
+.btn.btn-outline {
+  border-color: var(--primary-color);
+  background-color: transparent;
+  height: 60px;
+}
+.btn.btn-white {
+  background-color: var(--white-color);
+  height: 60px;
+}
+.btn.btn-small {
+  padding: 17px 28px;
+}
+
+.trans {
+  transition: transform 0.2s ease-out;
+}
+
+.trans:hover {
+  transform: scale(0.95);
+}
